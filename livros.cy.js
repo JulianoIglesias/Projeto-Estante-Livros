@@ -6,13 +6,13 @@ describe('automação do site', function () {
     cy.get('button').contains('Acessar').should('be.visible');
     cy.get('.cadastre_se > a').contains("Cadastre-se").should('be.visible');
     cy.get('.redefinir > a').contains("Redefinir").should('be.visible');
-    cy.get('.cadastre_se > a').first().click()
+    cy.get('.cadastre_se > a').first().click();
     cy.on('window:alert', (str) => {
-      expect(str).to.equal("Essa funcionalidade ainda não está pronta!")
+      expect(str).to.equal("Essa funcionalidade ainda não está pronta!");
     })
     cy.get('.redefinir > a').first().click()
     cy.on('window:alert', (str) => {
-      expect(str).to.equal("Essa funcionalidade ainda não está pronta!")
+      expect(str).to.equal("Essa funcionalidade ainda não está pronta!");
     })
   })
   it('Verifica a página, clica no botão Acessar, acessa a página e verifica o título', function () {
@@ -33,19 +33,19 @@ describe('automação do site', function () {
     cy.get('button').click();
     cy.get('.cabecalho__menu > :nth-child(2)').first().click()
     cy.on('window:alert', (str) => {
-      expect(str).to.equal("Essa funcionalidade ainda não está pronta!")
+      expect(str).to.equal("Essa funcionalidade ainda não está pronta!");
     })
     cy.get('.cabecalho__menu > :nth-child(3)').first().click()
     cy.on('window:alert', (str) => {
-      expect(str).to.equal("Essa funcionalidade ainda não está pronta!")
+      expect(str).to.equal("Essa funcionalidade ainda não está pronta!");
     })
     cy.get('.cabecalho__menu > :nth-child(4)').first().click()
     cy.on('window:alert', (str) => {
-      expect(str).to.equal("Essa funcionalidade ainda não está pronta!")
+      expect(str).to.equal("Essa funcionalidade ainda não está pronta!");
     })
     cy.get('.cabecalho__menu > :nth-child(5)').first().click()
     cy.on('window:alert', (str) => {
-      expect(str).to.equal("Essa funcionalidade ainda não está pronta!")
+      expect(str).to.equal("Essa funcionalidade ainda não está pronta!");
     })
   })
   it('Clica no botão sair e retorna para tela de login', function () {
